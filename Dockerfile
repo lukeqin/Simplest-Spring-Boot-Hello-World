@@ -7,4 +7,4 @@ RUN chmod +x /sbin/entrypoint.sh
 ENTRYPOINT ["/sbin/entrypoint.sh"]
 
 RUN mkdir -p /www/orbartal
-COPY ./target/*.war /www/orbartal
+COPY *.war /www/orbartal

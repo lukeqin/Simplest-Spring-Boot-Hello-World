@@ -29,6 +29,6 @@ jobs:
           repository: lukeqin/Simplest-Spring-Boot-Hello-World/orbartal
           IMAGE_NAME: 'orbartal'
           DOCKERFILE_PATH: 'Simplest-Spring-Boot-Hello-World/Dockerfile'
-          BUILD_CONTEXT: 'Simplest-Spring-Boot-Hello-World/target/'
+#          BUILD_CONTEXT: 'Simplest-Spring-Boot-Hello-World/target/'
           tag_with_ref: false
           tag_with_sha: true
