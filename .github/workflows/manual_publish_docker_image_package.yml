@@ -17,4 +17,5 @@ jobs:
           password: ${{ secrets.ACTIONS }}
           registry: docker.pkg.github.com
           repository: lukeqin/Simplest-Spring-Boot-Hello-World/orbartal
-          tag_with_ref: true
+          tag_with_ref: false
+          tag_with_sha: true
