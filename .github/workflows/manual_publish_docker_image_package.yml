@@ -18,7 +18,7 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -DskipTests=true -B package --file pom.xml
 
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v2
@@ -27,5 +27,8 @@ jobs:
           password: ${{ secrets.ACTIONS }}
           registry: docker.pkg.github.com
           repository: lukeqin/Simplest-Spring-Boot-Hello-World/orbartal
+          IMAGE_NAME: 'orbartal'
+          DOCKERFILE_PATH: 'Simplest-Spring-Boot-Hello-World/Dockerfile'
+          BUILD_CONTEXT: 'Simplest-Spring-Boot-Hello-World/target/'
           tag_with_ref: false
           tag_with_sha: true
