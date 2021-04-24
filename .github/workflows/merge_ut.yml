@@ -5,7 +5,7 @@ name: merge_ut
 
 on:
   pull_request:
-    branches: [ dev ]
+    branches: [ master ]
 
 jobs:
   build:
